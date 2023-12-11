@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./flex.css">
+
+
+</head>
+<body>
+
+    <h1>Flexbox Practice sheet</h1>
+    <hr>
+
+    <p>Here we have discussed about properties of flex box.</p> 
+
+    
+
+    <h4>PROPERTIES</h4>
+
+    <h2>1) Flex-Direction</h2>
+    <ul>
+        <li>Column</li>
+    <li>Column-Reverse</li>
+    <li>Row</li>
+    <li>Row Reverse</li>
+     </ul>
+
+     <h2>2) Flex-Wrap</h2>
+     <ul>
+        <li>Wrap</li>
+        <li>Nowrap</li>
+        <li>Wrap-reverse</li>
+     </ul>
+
+     <h2>3) Flex-Flow</h2>
+     
+     <h2>4) Justify-Content</h2>
+     <ul>
+        <li>Centre</li>
+        <li>Flex-start</li>
+        <li>Flex-End</li>
+        <li>Space-Around</li>
+        <li>Space-Between</li>
+     </ul>
+
+     <h2>5) Align-Item</h2>
+     <ul>
+        <li>Centre</li>
+        <li>Flex-start</li>
+        <li>Flex-End</li>
+        <li>Stretch</li>
+        <li>Baseline</li>
+     </ul>
+
+     <h2>6) Align-Content</h2>
+     <ul>
+        <li>Space-between</li>
+        <li>Space-around</li>
+        <li>Stretch</li>
+        <li>Centre</li>
+        <li>Flex-start</li>
+        <li>Flec-end</li>
+     </ul>
+
+     <h2>PERFECT-CENTERING</h2>
+
+     <hr>
+
+     <h3>Let's Explain One By One.</h3>
+
+
+    
+
+
+
+
+    <h2>1) Flex-Direction</h2>
+    <p class="exp">This Property Define in which direction the container wants to stuck the flex-items.</p>
+
+    <h4>CODE:-</h4>
+
+    <pre>
+    .CLASS {
+            display: flex;
+            flex-direction: ______?______;
+             }
+    </pre>
+
+    <h3>i) Column </h3>
+
+    <div class="column-direction">
+
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+    </div>
+
+    <h3> ii) Column-reverse</h3>
+    <div class="COl-riv">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        
+    </div>
+    
+    <h3> iii) row</h3>
+    <div class="row-direction">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+    </div>
+
+    <h3>iv) row-reverse</h3>
+    <div class="row-reverse-direction">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+    </div>   
+
+
+    <h2>2) Flex-wrap</h2>
+
+    <p class="exp"> Specify whether the flex item wrap or not. (means it should come on next line or not (by default they should go in single line))</p>
+
+    <h4>CODE:- </h4>
+    <pre> 
+        .CLASS {
+            display: flex;
+            flex-wrap: ___?___; 
+        } 
+            
+    </pre>
+    
+    <h3>i) Wrap</h3>
+    <div class="wrap">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+
+    </div>
+
+    <h3>ii) No-wrap</h3>
+    <div class="nowrap"> 
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+    </div>
+
+    <h3>iii) wrap reverse</h3>
+    <div class="wrap-reverse"> 
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+    </div>
+
+    <h2>3) Flex-Flow</h2>
+
+    <p class="exp">The flex-flow property is short-hand property for setting both the flex-direction and flex-wrap properties.</p>
+
+    <h4>CODE:-</h4>
+    <pre> .CLASS {
+        display: flex;
+        flex-flow: ___?___ }</pre>
+
+
+    <div class="flex-flow"> 
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+    </div>
+
+
+    <h2>4) Justify- Content</h2>
+
+    <p class="exp">Content convert itself according to screen size. </p>
+
+    <h4>CODE:-</h4>
+    <pre> .CLASS { 
+        display: flex;
+        justify-content: ___?___;
+    }</pre>
+
+    <h3>i) Centre</h3>
+    <div class="jc-centre">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+    </div>
+
+    <h3>ii) Flex-start</h3>
+    <div class="jc-flexstart">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+    </div>
+
+    <h3>iii) Flex-end</h3>
+    <div class="jc-flexend">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+    </div>
+
+    <h3>iv) space-between</h3>
+    <div class="jc-spacebetween">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+    </div>
+
+    <h3>v) Space-around</h3>
+    <div class="jc-spacearound">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+    </div>
+
+
+    <h2>5)Align-Item</h2>
+
+    <p class="exp">Used to align item (In TOP-Bottom direction  only.) </p>
+
+    <h4>CODE:-</h4>
+    <pre>.CLASS {
+        display: flex;
+        height: 250px;
+        align-items: ______?______; }
+    </pre>
+
+    <h3>i) Centre - Align item</h3>
+    <div class="ai-centre">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+
+    </div>
+
+    <h3>ii) Flex-Start - Align item</h3>
+    <div class="ai-flexstart">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+
+    </div>
+
+    <h3>iii) Flex-END - Align item</h3>
+    <div class="ai-flexend">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+
+    </div>
+
+    <h3>iv) Stretch - Align item</h3>
+    <div class="ai-stretch">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+
+    </div>
+
+    <h3>v) Baseline - Align item</h3>
+    <div class="ai-baseline">
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+
+    </div>
+
+    <h2>6) Align Content</h2>
+
+    <p class="exp"> Used to align the flexlines.</p>
+
+    <h4>CODE:-</h4>
+
+    <pre>.CALSS { 
+        display: flex;
+        height: 250px;
+        align-items: ______?______;
+        }</pre>
+
+    <h3>i) Space-Between Align-Content</h3>
+    <div class="AC-spacebetween"> 
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+        
+    </div>
+
+    <h3>ii) Space-around Align-Content</h3>
+    <div class="AC-spacearound"> 
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+        
+    </div>
+
+    <h3>iii) Stretch Align-Content</h3>
+    <div class="AC-stretch"> 
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+        
+    </div>
+
+    <h3>iv) Centre Align-Content</h3>
+    <div class="AC-Centre"> 
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+        
+    </div>
+
+    <h3>v) Flex-start Align-Content</h3>
+    <div class="AC-flexstart"> 
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+        
+    </div>
+
+    <h3>vi) Flex-End Align-Content</h3>
+    <div class="AC-flexend"> 
+        <div class="inner-div">1</div>
+        <div class="inner-div">2</div>
+        <div class="inner-div">3</div>
+        <div class="inner-div">4</div>
+        <div class="inner-div">5</div>
+        <div class="inner-div">6</div>
+        <div class="inner-div">7</div>
+        <div class="inner-div">8</div>
+        
+    </div>
+
+    <h2>PERFECT-CENTERING</h2>
+
+    <h4>CODE:-</h4>
+
+    <pre>{
+        display: flex;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+    </pre>
+    
+    <div class="perfect-centering"> 
+        <div class="inner-div">1</div>
+    
+        
+    </div>
+    <hr>
+
+    <H5>THANKS FOR READING.</H5>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
